@@ -7,7 +7,6 @@ import java.util.*;
 public class Main {
     private List<Person> users;
 
-
     public Main() {
         users = new ArrayList<>();
         System.out.println("[PROJECT-CREATE] ");
@@ -19,8 +18,7 @@ public class Main {
         users.add(per);
         System.out.println("Пользователь сохранен: " + per);
     }
-
-
+// :)
 
     public void displayUsers() {
         if (users.isEmpty()) {
