@@ -1,0 +1,43 @@
+import java.time.LocalDateTime;
+
+
+
+public class Person {
+    private static int idCount = 1;
+    private int id;
+    private String surname;
+    private String name;
+    private String lastName;
+    private int age;
+    private LocalDateTime save2;
+
+    public Person(String name, int age, String surname, String lastName) {
+        this.surname = surname;
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.id = idCount;
+        idCount++;
+        this.save2 = LocalDateTime.now();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public LocalDateTime getTime() {
+        return save2;
+   }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    @Override
+    public String toString() {
+        return " ID:" + id + " surname:" + surname + ", name:" + name + ", otchestvo:" + lastName + ", age:" + age + ", Time:" + save2;
+    }
+}
