@@ -21,10 +21,6 @@ public class Main {
         System.out.println("Время и дата добавления пользователя: ");
 
     }
-    public void getToday() {
-        LocalDateTime today = LocalDateTime.now();
-        System.out.println(today);
-    }
 
 
 
