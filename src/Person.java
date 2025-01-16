@@ -9,7 +9,7 @@ public class Person {
     private String name;
     private String lastName;
     private int age;
-    private LocalDateTime save2;
+    private LocalDateTime data;
 
     public Person(String name, int age, String surname, String lastName) {
         this.surname = surname;
@@ -18,7 +18,7 @@ public class Person {
         this.age = age;
         this.id = idCount;
         idCount++;
-        this.save2 = LocalDateTime.now();
+        this.data = LocalDateTime.now();
     }
 
     public int getId() {
@@ -26,7 +26,7 @@ public class Person {
     }
 
     public LocalDateTime getTime() {
-        return save2;
+        return data;
    }
 
     public String getName() {
@@ -38,6 +38,6 @@ public class Person {
     }
     @Override
     public String toString() {
-        return " ID:" + id + " surname:" + surname + ", name:" + name + ", otchestvo:" + lastName + ", age:" + age + ", Time:" + save2;
+        return " ID:" + id + " surname:" + surname + ", name:" + name + ", otchestvo:" + lastName + ", age:" + age + ", Time:" + data;
     }
 }
