@@ -1,10 +1,8 @@
-package ProjectCommands;
-
 import java.time.LocalDateTime;
 
 
 
-public class Project {
+public class Person {
     private static int idCount = 1;
     private int id;
     private String surname;
@@ -13,7 +11,7 @@ public class Project {
     private int age;
     private LocalDateTime data;
 
-    public Project(String name, int age, String surname, String lastName) {
+    public Person(String name, int age, String surname, String lastName) {
         this.surname = surname;
         this.name = name;
         this.lastName = lastName;
