@@ -1,22 +1,18 @@
+import ProjectCommands.Project;
+
 import java.util.Scanner;
-import java.util.*;
 
 
 public class Main {
-    private List<Person> users;
 
     public Main() {
-        users = new ArrayList<>();
         System.out.println("[PROJECT-CREATE] ");
     }
 
     public void addUsers(String name, int age, String surname, String lastName) {
-        Person per = new Person(name, age, surname, lastName);
+        Project per = new Project(name, age, surname, lastName);
         per.getId();
-        users.add(per);
     }
-// :)
-
 
     public static void main(String[] args) {
 
