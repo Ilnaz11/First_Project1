@@ -1,34 +1,17 @@
-import java.sql.SQLOutput;
-import java.time.LocalDateTime;
+import ProjectCommands.Project;
+
 import java.util.Scanner;
-import java.util.*;
 
 
 public class Main {
-    private List<Person> users;
 
     public Main() {
-        users = new ArrayList<>();
         System.out.println("[PROJECT-CREATE] ");
     }
 
     public void addUsers(String name, int age, String surname, String lastName) {
-        Person per = new Person(name, age, surname, lastName);
+        Project per = new Project(name, age, surname, lastName);
         per.getId();
-        users.add(per);
-        System.out.println("Пользователь сохранен: " + per);
-    }
-// :)
-
-    public void displayUsers() {
-        if (users.isEmpty()) {
-            System.out.println("Нет пользователей.");
-        } else {
-            System.out.println("Список пользователей:");
-            for (Person user : users) {
-                System.out.println(user);
-            }
-        }
     }
 
     public static void main(String[] args) {
@@ -48,7 +31,7 @@ public class Main {
             try {
                 age = Integer.parseInt(scanner.nextLine());
                 main.addUsers(name, age, surname, lastName);
-                main.displayUsers();
+                System.out.println("[ПОЛЬЗОВАТЕЛЬ СОХРАНЕН]");
             } catch (NumberFormatException e) {
                 System.out.println("Возраст должен быть числом.\nВводите данные по новой");
             }
