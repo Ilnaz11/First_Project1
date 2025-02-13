@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 
 public class Project {
-    private static int idCount = 1;
+    private static int idCount = 0;
     private int id;
     private String surname;
     private String name;
@@ -13,7 +13,7 @@ public class Project {
     private int age;
     private LocalDateTime data;
 
-    public Project(String name, int age, String surname, String lastName) {
+    public Project(String surname, String name, String lastName, int age) {
         this.surname = surname;
         this.name = name;
         this.lastName = lastName;
@@ -26,6 +26,7 @@ public class Project {
     public int getId() {
         return id;
     }
+
 
     public LocalDateTime getTime() {
         return data;

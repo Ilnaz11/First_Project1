@@ -19,7 +19,6 @@ public class Task {
             idCount++;
             this.data = LocalDateTime.now();
         }
-
         public int getId() {
             return id;
         }

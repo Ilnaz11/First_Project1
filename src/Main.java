@@ -1,13 +1,16 @@
 import ProjectCommands.ProjectCreate;
 import ProjectCommands.ProjectUsers;
+import ProjectRepository.ProjectRepository;
+import ProjectServise.ProjectServise;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        ProjectCreate projectCreate = new ProjectCreate();
-        projectCreate.projectComannds();
+        ProjectRepository repository = new ProjectRepository();
+        ProjectServise servise = new ProjectServise();
 
-        ProjectUsers projectUsers = new ProjectUsers();
+        ProjectCreate projectCreate = new ProjectCreate();
+//        consoleApp.start();
     }
 }
