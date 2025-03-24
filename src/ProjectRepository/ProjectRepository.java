@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProjectRepository {
-
     private static Scanner scanner = new Scanner(System.in);
     public static List<Project> users = new ArrayList<>();
 
