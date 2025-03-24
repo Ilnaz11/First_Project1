@@ -6,11 +6,11 @@ import java.time.LocalDateTime;
 
 public class Project {
     private static int idCount = 0;
-    private int id;
-    private String surname;
-    private String name;
-    private String lastName;
-    private int age;
+    private static int id;
+    private static String surname;
+    private static String name;
+    private static String lastName;
+    private static int age;
     private LocalDateTime data;
 
     public Project(String surname, String name, String lastName, int age) {
@@ -23,20 +23,25 @@ public class Project {
         this.data = LocalDateTime.now();
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
-
+    public static String getSurname() {
+        return surname;
+    }
+    public static String getLastName() {
+        return lastName;
+    }
 
     public LocalDateTime getTime() {
         return data;
    }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public int getAge() {
+    public static int getAge() {
         return age;
     }
     @Override

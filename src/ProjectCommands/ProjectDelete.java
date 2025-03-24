@@ -6,6 +6,5 @@ public class ProjectDelete {
         return "[ДАННЫЕ БЫЛИ УДАЛЕННЫ]";
     }
     private void deleteUser() {
-
     }
 }

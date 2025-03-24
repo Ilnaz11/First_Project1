@@ -8,9 +8,12 @@ public class Main {
 
     public static void main(String[] args) {
         ProjectRepository repository = new ProjectRepository();
-        ProjectServise servise = new ProjectServise();
+
+
+//        ProjectServise servise = new ProjectServise();
 
         ProjectCreate projectCreate = new ProjectCreate();
+        projectCreate.start();
 //        consoleApp.start();
     }
 }
